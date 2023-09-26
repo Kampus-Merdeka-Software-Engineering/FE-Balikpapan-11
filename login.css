@@ -1,285 +1,238 @@
+@import url();
 
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100&display=swap');
 
-  * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;;
+}
 
-  }
-  
-  body {
-    width: 100%;
-    height: 100vh;
-      background-color: #f2f2f2;
-      background:url("./aset/desktop-wallpaper-violet-color-high-definition-high-quality.jpg") center / cover no-repeat;
-    margin: 0;
-    padding: 0;
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh
-  }
+    min-height: 100vh;
+    background: url(./123.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
-  header {
+header {
     position: fixed;
-    width: 100%;
-    left: 0;
     top: 0;
-    padding:0 10px;
-  }
-
-  .navbar h2 {
-    padding: 22px 0;
-    color: #ffff;
-    font: bold;
-    font-size: 25px;
-    font-weight:600;
-  }
-
-  .navbar {
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
     display: flex;
-    padding: 22px 0;
-    align-items: center;
-    max-width: 1500px;
-    margin: 0 auto;
     justify-content: space-between;
-  }
-
-  .navbar .links {
-    display: flex;
-    list-style: none;
-    gap: 35px;
-  }
-
-  .navbar .links a {
-    color: #ffff;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 500 ;
-  }
-
-  .navbar .links a:hover {
-    color: #8A2BE2;
-  }
-
-  .navbar .login-btn {
-    border: none;
-    outline: none;
-    font-size: large;
-    font-weight: 600;
-    padding: 10px 18px;
-    border-radius: 3px;
-    cursor: pointer;
-    background: #ffff;
-  }
-
-  .form-popup{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    max-width: 720px;
-    opacity: 0;
-    pointer-events: none;
-    width: 100%;
-    background: #ffff;
-    border: 2px solid #ffff;
-    transform: translate(-50%, -100%);
-  }
-  
-  .form-popup .back-btn {
-    position: absolute;
-    top:12px;
-    right: 12px;
-    color: #8A2BE2;
-    cursor: pointer;
-  }
-
-  .form-popup .form-box{
-    display:flex;
-  }
-
-  .form-box .form-details{
-    max-width: 330px;
-    width: 100%;
-    color: #f2f2f2;
-    display: flex;
-    padding: 0 20px;
-    text-align: center;
-    flex-direction: column;
     align-items: center;
-    justify-content: center ;
-    background: url(./aset/360_F_294370899_CjLy3nMMSkm9FBsIdPvqlQgjiGrTT9kW.jpg);
-    background-size: contain;
-    background-position: center;
-  }
+    z-index: 99;
+}
 
-  .login .form-details{
-    background: url(./aset/360_F_294370899_CjLy3nMMSkm9FBsIdPvqlQgjiGrTT9kW.jpg);
-    background-size: contain;
-    background-position: center;
-  }
+.logo {
+    font-size: 2em;
+    color: white;
+    user-select: none;
+    transition: 2s;
+    width: 60px;
+    height: 60px;
+    
+}
 
-  .signup .form-details{
-    background: url(./aset/Apa-itu-Bahasa-Pemrograman.jpg);
-    background-size: contain;
-    background-position: center;
-  }
-
-  .form-box h2 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .form-box .form-content {
-    width: 100%;
-    padding: 35px;
-  }
-
-  form .form-content{
-    height: 100px;
-    width: 50%;
-  }
-
-  form .input-filed {
-    height: 50px;
-    width: 100%;
-    margin-top: 20px;
+.navigation a {
     position: relative;
-  }
-
-  form .input-filed input{
-    width: 100%;
-    height: 100%;
-    outline: none;
-    padding:0 15px;
-    font-size: 0.95rem;
-    border-radius: 3px;
-    border: 1px solid #8A2BE2  ;
-  }
-
-  .input-filed input:focus{
-    border-color: #8A2BE2;
-  }
-
-  .input-filed input:is(:focus, :valid){
-    padding:16px 15px 0%;
-  }
-
-  form .input-filed label {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    color: #717177;
-    pointer-events: none;
-    transform: translateY(-50%);
-    transition: 0.2 ease;
-
-  }
-
-  .input-filed input:is(:focus, :valid) ~ label{
-    color: #8A2BE2;
-    font-size: medium;
-    transform: translateY(-120%);
-
-  }
-
-  .form-box a {
-    color: #00bcd4;
+    font-size: 1.1rem;
+    color: white;
     text-decoration: none;
-  }
+    font-weight: 50%;
+    margin-left: 30px;
+}
 
-  .form-box a:hover{
-    text-decoration: underline;
-  }
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transform-origin: right;
+    transform: scaleZ(0);
+    transition: transform .5s;
+}
 
-  .form-box :where(.forgot-pass, policy-text) {
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnlogin-popup {
+    width: 110px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 1em;
+    color: white;
+    font-weight: 300;
+    margin-left: 50px;
+    transition: 2s;
+}
+
+.navigation .btnlogin-popup:hover {
+    background-color: rgb(29, 4, 97);
+    color: white;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgb(225, 225, 225, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30 px rgb(0, 0, 0, .5);
     display: flex;
-    margin-top: 14px;
-    font-size: 0.95rem;
-  }
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* transform: scale(0);  */
+    /* transition: transform .5s, height .2s ease; */
+}
 
-  .blur-bg-overlay {
-    position: fixed;
-    top: 0 ;
-    left: 0 ;
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 520px;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translate(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translate(-400px);
+}
+
+.wrapper .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.form-box h2{
+    font-size: 2em;
+    color: rgb(29, 4, 97);
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 55%;
+    left: 5px;
+    transform: translateY(-505);
+    font-size: 1em;
+    color: rgb(29, 4, 97);
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box  input:focus-label,
+.input-box  input:valid-label {
+    top: -7px;
+}
+
+.input-box input {
     width: 100%;
     height: 100%;
-    opacity: 0;
-    pointer-events: none;
-    backdrop-filter: blur(5px);
-    transition:  0.1s ease;
-  }
-
-  .show-popup .blur-bg-overlay {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  
-  .show-popup .form-popup{
-    opacity: 1;
-    pointer-events: auto;
-    transform: translate(-50%, -50%);
-    transition:  transfrom 0.3s ease, opacity 0.1s;
-  }
-
-  form button {
-    width: 100%;
-    outline: none;
+    background: transparent;
     border: none;
-    font-size: 20px;
+    outline: none;
+    font-size: 1em;
+    color: rgb(29, 4, 97);
     font-weight: 600;
-    padding: 14px 0;
-    border-radius: 3px;
-    margin: 25px 0;
-    color: #ffff;
-    cursor: pointer;
-    background-color: #00bcd4;
-    transition: 0.2s ease;
-  }
-
-form button:hover{
-  background-color: #8A2BE2;
-
 }
 
-.form-popup .signup{
-  display: none;
+.input-box .icon {
+    position: absolute;
+    right: 10px;
+    font-size: 1.8em;
+    color: black;
+    line-height: 60px;
 }
-  .form-box .bottom-link{
-    text-align: center;
-  }
 
-  .form-popup .signup,
-  .form-popup .show-signup .login{
-    display: none;
-  }
-
-  .form-popup .show-signup .signup{
+.ingat {
+    font-size: .9em;
+    color: rgb(29, 4, 97);
+    font-weight: 500;
+    margin: 15px 0 15px;
     display: flex;
-  }
+    justify-content: space-between;
+}
 
- .signup .policy-text {
-  display: flex;
-  align-items: center;
- }
+.ingat label input {
+    accent-color: rgb(29, 4, 97);
+    margin-right: 3px;
+}
 
- .signup .policy-text input {
-  width: 14px;
-  height: 14px;
-  margin-right: 7px;
- }
+.ingat a {
+    color: rgb(29, 4, 97);
+    text-decoration: none;
+}
 
- @media (max-width: 760px) {
-  .form-popup {
-    width: 95%;  
-  }
-  .form-box .form-details {
-    display: none;
-  }
-  .form-box .form-content {
-    padding: 30px 20px;
-  }
- }
+.ingat a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: rgb(29, 4, 97);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
+
+.login-register {
+    font-size: .9rem;
+    color:  rgb(29, 4, 97);
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a { 
+    color: rgb(29, 4, 97);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
