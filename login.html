@@ -6,7 +6,7 @@
     <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="login.css">
 </head>
 <body>
@@ -23,31 +23,77 @@
           <li><a href="#">Contac Us</a></li>
         </ul>
         <button class="login-btn">Daftar</button>
-
         </nav>
     </header>
     <!-- Login -->
+    <div class="blur-bg-overlay"></div>
    <div class="form-popup">
-    <div class="form-box">
+    <span class="back-btn material-symbols-rounded"> < Back </span>
+    <div class="form-box login">
         <div class="form-details">
             <h1>Welcome back</h1>
         <p>Welcome to the new "My learning" here at Genius Journey. This will be your hub to all the tutorials we offer and your learning progress.</p>
+            </div>
         <div class="form-content">
-            <h1>Login</h1>
+            <h2>Login</h2>
             <form action="#">
                 <div class="input-filed">
                     <input type="text"required>
                     <label>Username</label>
                 </div>
                 <div class="input-filed">
-                    <label>Password</label
+                    <input type="password"required>
+                    <label>Password</label>
                    </div>
-                       <a href="#" class="forot-pass">Forgot password</a>
-                       <button type="submit">Daftar</button>
+                       <a href="#" class="forgot-pass">Forgot password?</a>
+                       <button type="submit">Daftar</button> 
                     </form>
                     <div class="bottom-link">
                         Kamu belum punya Akun?
-                        <a href="#">Daftar disini!</a>
+                        <a href="#" id="signup-link">Daftar disini!</a>
+        </div>
+        </div>
+    </div>
+    <div class="form-box signup">
+        <div class="form-details">
+            <h1>Create Account</h1>
+        <p>Selamat Mendaftar</p>
+            </div>
+        <div class="form-content">
+            <h2>SIGNUP</h2>
+            <form action="#">
+                <div class="input-filed">
+                    <input type="text"required>
+                    <label>Enter your name</label>
+                </div>
+                <div class="input-filed">
+                    <input type="text"required>
+                    <label>Enter your email</label>
+                </div>
+                <div class="input-filed">
+                    <input type="password"required>
+                    <label>Password</label>
+                   </div>
+                   <div class="input-filed">
+                    <input type="password"required>
+                    <label>Confrim your password</label>
+                   </div>
+                   <div></div>
+                   <div class="input-filed">
+                    <input type="file">
+                   </div>
+                   <div class="policy-text">
+                    <input type="checkbox" id="policy">
+                    <label for="policy">
+                        i agree the
+                        <a href="#">Klik disini kalau bingung</a>
+                    </label>
+                   </div>
+                       <button type="submit">Submit</button> 
+                    </form>
+                    <div class="bottom-link">
+                        apa sebelumnya kamu  sudah punya Akun?
+                        <a href="#" id="login-link">Klik disini!</a>
         </div>
         </div>
     </div>
@@ -56,7 +102,7 @@
        
 
        
-       
+       <script src="login.js">defer</script>
 
     
 </body>
