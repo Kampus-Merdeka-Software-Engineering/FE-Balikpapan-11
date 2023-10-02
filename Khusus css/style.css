@@ -1,0 +1,343 @@
+:root {
+  --primary: #b6895b;
+  --bg: #ededed;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg);
+  color: black;
+  min-height: 2000px;
+}
+/*Navbar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5%;
+  background-color: #fdf6f6;
+  border-bottom: 1px solid #8a8383;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.navbar .navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: #f4800d;
+}
+
+.navbar .navbar-nav a {
+  color: black;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 0 1rem;
+  font-weight: 600;
+}
+.navbar .navbar-nav a:hover {
+  color: #ed790d;
+}
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scalex(0);
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scalex(0.5);
+  transition: 0.3s linear;
+}
+.navbar .navbar-extra a {
+  color: black;
+  margin: 0 0.5rem;
+}
+.navbar .navbar-extra a:hover {
+  color: #a17041;
+}
+#humberger-menu {
+  display: none;
+}
+
+/* hero Section*/
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/Gambar-Depan.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero ::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(201, 201, 228) 3%,
+    rgba(186, 183, 183, 0) 25%
+  );
+}
+.hero .content {
+  padding: 1.4rem 5%;
+  max-width: 60rem;
+  line-height: 1.2;
+}
+.hero .content h1 {
+  font-size: 5rem;
+  color: #a17041;
+  text-shadow: #100f0f;
+}
+.hero .content h2 {
+  font-size: 2.8rem;
+  color: #0b0b0b;
+  text-shadow: #a17041;
+  line-height: 1.2;
+}
+.hero .content p {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  line-height: 1.2;
+}
+.hero .content .cta {
+  margin-top: 4rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  color: aliceblue;
+  background-color: #0b0b0b;
+  font-weight: 600;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 3px;
+}
+
+/* kenapa memilih kami */
+.tentang {
+  padding: 5rem 7% 1.4rem;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.tentang h1 span {
+  color: #a17041;
+}
+
+/* Bagian About */
+
+.about .row {
+  display: flex;
+}
+
+.about .row .image {
+  flex: 1 1 45rem;
+}
+
+.about .row .image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: var(--light-color);
+  margin-bottom: 0.8rem;
+  font-weight: 100;
+  text-align: justify;
+  padding-top: 0;
+}
+
+.about .row .content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+}
+
+.about .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 0.5fr));
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 3rem;
+  padding: 0.5rem 5%;
+}
+
+.about .box-container .box {
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Menambahkan bingkai dalam */
+}
+
+.about .box-container .box i {
+  font-size: 4rem;
+  color: var(--main-color);
+}
+
+.about .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+  margin-bottom: 0.3rem;
+}
+
+.about .box-container .box p {
+  font-size: 1.7rem;
+  color: var(--light-color);
+}
+
+/* Bagian Reviews */
+.reviews .heading{
+  padding: 5rem 7% 1.4rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.reviews .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.reviews .box-container .box {
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Menambahkan bingkai dalam */
+}
+
+.reviews .box-container .box p {
+  line-height: 1.7;
+  font-size: 1.7rem;
+  color: var(--light-color);
+}
+
+.reviews .box-container .box .student {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.reviews .box-container .box .student img {
+  height: 5rem;
+  width: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.reviews .box-container .box .student h3 {
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 0.3rem;
+}
+
+.reviews .box-container .box .student .stars {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+}
+
+.footer span {
+  display: inline-block;
+}
+
+/*mdia queries*/
+
+/*laptop*/
+@media (max-width: 1366px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+
+  #humberger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 18rem;
+    height: 100vh;
+    transition: 0.4s;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    padding: 0.5rem;
+    margin: 1.5rem;
+    font-size: 2rem;
+    color: azure;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav a:hover::after {
+    transform: scalex(0.3);
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  @media (max-width: 768px) {
+    .about .row {
+      flex-wrap: wrap;
+    }
+}
+/*Mobile Phone*/
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .flex-btn {
+    gap: 0;
+    flex-flow: column;
+  }
+
+  .home-grid .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about .row .image img {
+    height: 50rem;
+  }
+}
