@@ -22,8 +22,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 5%;
-  background-color: #fdf6f6;
-  border-bottom: 1px solid #8a8383;
+  background-color: #FFECAF;
+  border-bottom: 1px solid #ffff;
   position: fixed;
   top: 0;
   left: 0;
@@ -70,7 +70,7 @@ body {
   color: #a17041;
 }
 #humberger-menu {
-  display: none;
+  display: inline-block;
 }
 
 /* hero Section*/
@@ -78,7 +78,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../img/Gambar-Depan.jpg");
+  background-image: url("https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg&uid=R118614792&semt=sph");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -102,19 +102,20 @@ body {
 }
 .hero .content h1 {
   font-size: 5rem;
-  color: #a17041;
+  color: #EE9322;
   text-shadow: #100f0f;
 }
 .hero .content h2 {
   font-size: 2.8rem;
-  color: #0b0b0b;
-  text-shadow: #a17041;
+  color: #fff;
+  text-shadow: #ed790d;
   line-height: 1.2;
 }
 .hero .content p {
   font-size: 1.5rem;
   margin-top: 2rem;
   line-height: 1.2;
+  color: white;
 }
 .hero .content .cta {
   margin-top: 4rem;
@@ -127,6 +128,125 @@ body {
   border-radius: 1rem;
   box-shadow: 1px 1px 3px;
 }
+/* tutor */
+.body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ededed;
+ }
+ 
+ .slide-container{
+   max-width: 1120px;
+   width: 100%;
+   background-color: #ededed;
+   padding: 40px 0;
+ }
+ 
+ .slide-content{
+   margin: 0 40px;
+ 
+ }
+ 
+ .card{
+   width: 320px;
+   border-radius: 25px;
+   background-color: #ffff;
+ 
+ }
+ 
+ .image-content, .card-content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding:10px 14px ;
+ }
+ 
+ .image-content{
+   position: relative;
+   row-gap: 5px ;
+   padding: 25px 0;
+ }
+ 
+ .overlay{
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   background-color: #FFECAF;
+   border-radius: 25px 25px 0 25px;
+ }
+ 
+ .overlay::before,
+ .overlay::after{
+   content: '';
+   position: absolute;
+   right: 0;
+   bottom: -40px;
+   height: 40px;
+   width: 40px;
+   background-color: #FFECAF;
+ }
+ .overlay::after{
+   border-radius: 0 25px 0 0;
+   background-color: #fff;
+ 
+ }
+ .card-image{
+   position: relative;
+   height: 150px;
+   width: 150px;
+   border-radius: 50%;
+   background: #fff;
+   padding: 3px;
+ }
+ 
+ .card-image .card-img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+   border: 4px solid #ed790d ;
+ }
+ 
+ .name {
+   font-size: 18px;
+   font-weight: 500;
+   color: #333;
+   text-align: center;
+ }
+ 
+ .description {
+   font-size: 14px;
+   color: #707070;
+ }
+ 
+ .button {
+   border: none;
+   font-size: 16px;
+   padding: 8px 16px;
+   background-color: #4070f4;
+   border-radius: 7px;
+   margin: 14px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+ }
+ .button:hover{
+   background: #b6895b ;
+ }
+ 
+ /* kenapa memilih kami */
+ .tentang {
+   padding: 5rem 7% 1.4rem;
+   font-size: 2rem;
+   margin-bottom: 3rem;
+   text-align: center;
+ }
+ .tentang h1 span {
+   color: #a17041;
+ }
 
 /* kenapa memilih kami */
 .tentang {
