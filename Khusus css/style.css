@@ -12,7 +12,7 @@
 }
 body {
   font-family: "poppins", sans-serif;
-  background-color: var(--bg);
+  background-color: #6A6D78;
   color: black;
   min-height: 2000px;
   text-align: center;
@@ -394,28 +394,6 @@ body {
 }
 
 
-
-/* Media by
-.media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 25px;
-  gap: 1.5rem;
-  min-height: 50px;
-}
-
-.media img {
-  width: 10%;
-  height: 10%;
-  object-fit: cover;
-}
-
-
- */
-
-
-/*mdia queries*/
 
 /*laptop*/
 @media (max-width: 1366px) {
