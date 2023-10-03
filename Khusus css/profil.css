@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navigation-bar */
+
+nav {
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    background-color:  rgba(78, 56, 134, 1);
+    padding: 0px 120px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+.wrap-menu {
+    display: flex;
+}
+
+.menu {
+    margin: 0px 16px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* end navigation */
+ 
+
+/* hero section */
+.hero-section {
+    width: 100% ;
+    height: 670px ;
+    padding: 0px 120px;
+    background-color: rgba(107, 83, 170, 1);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+
+.hero-information h3 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+
+.hero-information h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.hero-information p {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.hero-information a {
+    padding: 8px 32px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 12px;
+    
+}
+
+.hero-image {
+    width: 361px ;
+    height: 345px;
+     
+   
+}
+
+.hero-image> img {
+    width: 100%;
+    height: 100%;
+   border-radius: 30px;
+    
+    
+} 
+/* end hero section */
+
+/* section-tengah */
+.section-tengah {
+    padding-top: 2%;
+    text-align: center;
+    background-color: rgb(240, 230, 217);
+    height: 500px;
+}
+
+.input-text {
+    padding-top: 2%;
+}
+
+.nama {
+    width: 25%;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    padding: 7px;
+
+}
+
+.email {
+    width: 25%;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    padding: 7px;
+
+}
+
+.pesan {
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    padding: 5%;
+
+}
+
+.btn {
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+
+}
+
+.sosial-media {
+    padding-top: 5%;
+    
+}
+
+#instagram,
+#github,
+#facebook,
+#linkedin {
+    font-size: 20px;
+    background-color: rgba(107, 83, 170, 1);
+    color: white;
+    /* box-shadow: 2px 2px 2px rgba(107, 83, 170, 1)k, 
+    10px 1px 12px rgba(107, 83, 170, 1), 2px 2px 10px black,
+    2px 2px 3px rgba(107, 83, 170, 1);  */
+    border-radius: 29px;
+    padding: 11px 19px;
+    margin: 0 40px;
+    
+    
+}
+
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(78, 56, 134, 1);
+    color: white;
+}
