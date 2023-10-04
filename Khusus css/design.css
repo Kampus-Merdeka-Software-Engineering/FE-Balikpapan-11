@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
 
 :root {
-  --main-color: #8e44ad;
+  --main-color: #ed790d;
   --red: #e74c3c;
   --orange: #f39c12;
   --light-color: #888;
@@ -48,7 +48,7 @@ html::-webkit-scrollbar-thumb {
 
 body {
   background-color: var(--bg);
-  padding-left: 30rem;
+  
 }
 
 body.dark {
@@ -67,12 +67,14 @@ section {
   padding: 2rem;
   margin: 0 auto;
   max-width: 1200px;
+
 }
 
 .heading {
   font-size: 2.5rem;
   color: var(--black);
   margin-bottom: 2.5rem;
+  margin-top: 3rem;
   border-bottom: var(--border);
   padding-bottom: 1.5rem;
   text-transform: capitalize;
@@ -249,92 +251,60 @@ section {
   display: none;
 }
 
-.side-bar {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5%;
+  background-color: #FFECAF;
+  border-bottom: 1px solid #ffff;
   position: fixed;
   top: 0;
   left: 0;
-  width: 30rem;
-  background-color: var(--white);
-  height: 100vh;
-  border-right: var(--border);
-  z-index: 1200;
+  right: 0;
+  z-index: 9999;
+}
+.navbar .navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+  font-style: italic;
 }
 
-.side-bar #close-btn {
-  text-align: right;
-  padding: 2rem;
-  display: none;
+.navbar .navbar-logo span {
+  color: #f4800d;
 }
 
-.side-bar #close-btn i {
-  text-align: right;
-  font-size: 2.5rem;
-  background: var(--red);
-  border-radius: 0.5rem;
-  color: var(--white);
-  cursor: pointer;
-  height: 4.5rem;
-  width: 4.5rem;
-  line-height: 4.5rem;
-  text-align: center;
+.navbar .navbar-nav a {
+  color: black;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 0 1rem;
+  font-weight: 600;
 }
-
-.side-bar #close-btn i:hover {
-  background-color: var(--black);
+.navbar .navbar-nav a:hover {
+  color: #ed790d;
 }
-
-.side-bar .profile {
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-.side-bar .profile .image {
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%;
-  object-fit: contain;
-  margin-bottom: 1rem;
-}
-
-.side-bar .profile .name {
-  font-size: 2rem;
-  color: var(--black);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.side-bar .profile .role {
-  font-size: 1.8rem;
-  color: var(--light-color);
-}
-
-.side-bar .navbar a {
+.navbar .navbar-nav a::after {
+  content: "";
   display: block;
-  padding: 2rem;
-  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scalex(0);
 }
-
-.side-bar .navbar a i {
-  margin-right: 1.5rem;
-  color: var(--main-color);
-  transition: 0.2s linear;
+.navbar .navbar-nav a:hover::after {
+  transform: scalex(0.5);
+  transition: 0.3s linear;
 }
-
-.side-bar .navbar a span {
-  color: var(--light-color);
+.navbar .navbar-extra a {
+  color: black;
+  margin: 0 0.5rem;
 }
-
-.side-bar .navbar a:hover {
-  background-color: var(--light-bg);
+.navbar .navbar-extra a:hover {
+  color: #a17041;
 }
-
-.side-bar .navbar a:hover i {
-  margin-right: 2.5rem;
-}
-
-.side-bar.active {
-  left: -30rem;
+#humberger-menu {
+  display: flexbox;
 }
 
 .home-grid .box-container {
@@ -531,7 +501,7 @@ section {
 
 .courses .box-container .box {
   border-radius: 0.5rem;
-  background-color: var(--white);
+  background-color: bisque;
   padding: 2rem;
 }
 
@@ -1287,7 +1257,7 @@ section {
 
 .footer {
   background-color: var(--light-color);
-  border-top: var(--light-color)
+  border-top: var(--light-color);
   position: sticky;
   bottom: 0;
   left: 0;
@@ -1308,21 +1278,6 @@ section {
 @media (max-width: 1200px) {
   body {
     padding-left: 0;
-  }
-
-  .side-bar {
-    left: -30rem;
-    transition: 0.2s linear;
-  }
-
-  .side-bar #close-btn {
-    display: block;
-  }
-
-  .side-bar.active {
-    left: 0;
-    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
-    border-right: 0;
   }
 }
 

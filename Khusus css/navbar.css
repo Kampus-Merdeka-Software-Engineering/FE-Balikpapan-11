@@ -1,0 +1,79 @@
+:root {
+    --primary: #b6895b;
+    --bg: #ededed;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%; /* Ubah padding top dan bottom menjadi 1rem */
+    background-color: #FFECAF;
+    border-bottom: 1px solid #fff; /* Ubah warna border menjadi putih */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar .navbar-logo {
+    font-size: 2rem; /* Ubah ukuran font logo menjadi 2rem */
+    font-weight: 700;
+    color: black;
+    font-style: italic;
+  }
+  
+  .navbar .navbar-logo span {
+    color: #f4800d;
+  }
+  
+  .navbar .navbar-nav a {
+    color: black;
+    display: inline-block;
+    font-size: 1.2rem; /* Ubah ukuran font menu menjadi 1.2rem */
+    margin: 0 1rem;
+    font-weight: 600;
+    text-transform: uppercase; /* Ubah teks menu menjadi huruf kapital */
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: #ed790d;
+  }
+  
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.2rem; /* Ubah padding bottom menjadi 0.2rem */
+    border-bottom: 0.2rem solid var(--primary);
+    transform: scalex(0);
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+    transform: scalex(1); /* Ubah transform scale menjadi 1 */
+    transition: 0.3s linear;
+  }
+  
+  .navbar .navbar-extra a {
+    color: black;
+    margin: 0 0.5rem;
+  }
+  
+  .navbar .navbar-extra a:hover {
+    color: #a17041;
+  }
+  
+  #humberger-menu {
+    display: none;
+  }
+  
