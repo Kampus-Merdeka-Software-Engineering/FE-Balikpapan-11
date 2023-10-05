@@ -17,6 +17,7 @@ body {
   min-height: 2000px;
   text-align: center;
   justify-content: center;
+
 }
 #humberger-menu {
   display: none;
@@ -353,11 +354,11 @@ body {
 @media (max-width: 768px) {
   html {
     font-size: 60%;
-  }
+  
 
 
   #humberger-menu {
-    display: inline-block;
+    display: none;
   }
 
   .navbar .navbar-nav {
@@ -409,5 +410,6 @@ body {
   .about .row .image img {
     height: 50rem;
   }
+}
 }
 }

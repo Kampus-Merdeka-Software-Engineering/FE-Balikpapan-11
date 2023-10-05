@@ -2,12 +2,17 @@
 <html>
 <head>
     <title>Contact us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" type="text/css" href="./Khusus css/contact.css">
     <link rel="stylesheet" href="./Khusus css/navbar.css" />
     <link rel="stylesheet" href="./Khusus css/footer.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 <body>
     <!--Navbar Star-->
     <nav class="navbar">
@@ -37,20 +42,21 @@
                 <!-- Gambar atau konten kiri -->
             </div>
             <div class="right">
-                
+                <form id="from">
                 <h2>Get In Touch</h2>
-                <input type="text" class="field" placeholder="Enter Your Name">
-                <input type="text" class="field" placeholder="Enter Your Email">
-                <input type="text" class="field" placeholder="Enter Your Number">
-                <textarea  placeholder="Enter Your Message" class="field"></textarea>
-                <button class="btn">Send</button>
-
-                    
+                <input id="input" type="text" class="field" placeholder="Enter Your Name">
+                <input id="email" class="field" placeholder="Enter Your Email">
+                <input id="number" class="field" placeholder="Enter Your Number">
+                <textarea id="message" placeholder="Enter Your Message" class="field"></textarea>
+                <button id="send" class="btn">Send</button>   
             </div>
          
     </div>
     
             </div>
+          </form>
+
+            <div class="item-container"></div>
 
         <!-- FOOTER -->
         <footer>
@@ -71,4 +77,8 @@
                 <p>copyright &copy;2023 Genius Journey. designed by <span>Team11</span></p>
             </div>
         </footer>
+        
+        <script src="./Khusus js/contact.js"></script>
+
+</body>
    
