@@ -1,3 +1,5 @@
+
+
 * {
   padding: 0;
   margin: 0;
@@ -32,10 +34,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background: url("/Aset/bg.jpg") no-repeat center;
-  background-size: cover;
-  filter: blur(50px);
-  z-index: -1;
+  z-index: 2;
 }
 .contact-box {
   max-width: 850px;
@@ -136,5 +135,22 @@ textarea {
   }
   .left {
     height: 200px;
+  }
+}
+
+  
+@media (max-width: 1366px) {
+   .container{
+    font-size: 70%;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+  .container:after {
+    font-size: 100%;
+    width: 100%;
   }
 }
