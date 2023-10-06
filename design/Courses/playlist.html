@@ -14,22 +14,38 @@
    <link rel="stylesheet" href="../../Khusus css/footer.css">
    <link rel="stylesheet" href="../../Khusus css/style.css" />
    <link rel="stylesheet" href="../../Khusus css/navbar.css">
-
+ 
 
 </head>
 <body>
+   <nav class="navbar">
+      <a href="#" class="navbar-logo">Genius<span>Journey</span></a>
+
+      <div class="navbar-nav">
+        <a href="/index.html">Home</a>
+        <!-- <a href="#Tutors">Tutors</a> -->
+        <!-- <a href="#about">About</a> -->
+        <a href="contact.html">Contact Us</a>
+        <a href="./design/Courses/courses.html">Courses</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#humberger menu" id="humberger-menu"
+          ><i data-feather="menu"></i
+        ></a>
+      </div>
+    </nav>
 
 <header class="header">
    
 <section class="playlist-details">
 
-   <h1 class="heading">playlist details</h1>
+   
 
    <div class="row">
-
       <div class="column">
-         <form action="" method="post" class="save-playlist">
-            <button type="submit"><i class="far fa-bookmark"></i> <span>save playlist</span></button>
+         <form action="courses.html" class="save-playlist">
+            <button  type="submit"> <i class=" fa fa-arrow-left"></i><span>Kembali</span></button></a>
          </form>
    
          <div class="thumb">
@@ -50,6 +66,7 @@
             <h3>complete HTML tutorial</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum minus reiciendis, error sunt veritatis exercitationem deserunt velit doloribus itaque voluptate.</p>
             <a href="../profil/dody.html" class="inline-btn">view profile</a>
+            <a href="#" class="inline-btn">+ playlist</a>
          </div>
       </div>
    </div>
@@ -102,8 +119,26 @@
 
 </section>
 
+<footer>
+   <div class="footer-content">
+       <h3>Genius Journey</h3>
+       <p>WEB ini dibuat dari kerja sama tim yang kompak walaupun sering mengubah desain tetapi tetap jadi.
+         Nangis dikit gak ngaruh
+       </p>
+      
+   </div>
+   <div class="footer-bottom">
+       <p>copyright &copy;2023 Genius Journey. designed by <span>Team11</span></p>
+   </div>
+</footer>
+
 <!-- custom js file link  -->
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/Khusus js/script.js"></script>
 <script src="/Khusus js/design.js"></script>
+<script>
+   feather.replace();
+ </script>
 
    
 </body>

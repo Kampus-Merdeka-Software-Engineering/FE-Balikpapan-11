@@ -1,7 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+
 :root {
+  --main-color: #ed790d;
+  --red: #e74c3c;
+  --orange: #f39c12;
+  --light-color: #888;
+  --light-bg: #eee;
+  --black: #2c3e50;
+  --white: #fff;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.2);
   --primary: #b6895b;
   --bg: #ededed;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -291,11 +302,11 @@ body {
 .about .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 0.5fr));
-  gap: 0.5rem;
+  gap: 1rem;
   justify-content: center;
   align-items: flex-start;
   margin-top: 3rem;
-  padding: 0.5rem 5%;
+  padding: 2rem 1%;
 }
 
 .about .box-container .box {
@@ -334,9 +345,10 @@ body {
 .reviews .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: center;
   align-items: flex-start;
+  padding: 1.2%;
 }
 
 .reviews .box-container .box {
@@ -398,6 +410,7 @@ body {
     display: inline-block;
   }
 
+
   .navbar .navbar-nav {
     position: absolute;
     top: 100%;
@@ -448,5 +461,6 @@ body {
     height: 50rem;
   }
 }
-}
+
+  }
 }

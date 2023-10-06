@@ -137,6 +137,12 @@ section {
 
 }
 
+.heading h1{
+  margin: 20px;
+  margin-bottom: 2.5rem;
+  margin-top: 3rem;
+}
+
 .heading {
   font-size: 2.5rem;
   color: var(--black);
@@ -145,6 +151,12 @@ section {
   border-bottom: var(--border);
   padding-bottom: 1.5rem;
   text-transform: capitalize;
+  min-height: 10vh;
+}
+
+.inline-btn {
+  text-align: left;
+  justify-content: left;
 }
 
 .inline-btn,
@@ -153,6 +165,7 @@ section {
 .btn,
 .delete-btn,
 .option-btn {
+  text-align: left;
   border-radius: 0.5rem;
   color: #fff;
   font-size: 1.8rem;
@@ -179,6 +192,7 @@ section {
 .btn,
 .inline-btn {
   background-color: var(--main-color);
+  
 }
 
 .option-btn,
@@ -638,10 +652,13 @@ section {
   flex-wrap: wrap;
   background-color: var(--white);
   padding: 2rem;
+  padding-top: 10%;
+  
 }
 
 .playlist-details .row .column {
   flex: 1 1 40rem;
+  text-align: initial;
 }
 
 .playlist-details .row .column .save-playlist {
@@ -726,12 +743,14 @@ section {
 }
 
 .playlist-details .row .column .details h3 {
+  text-align: left;
   font-size: 2rem;
   color: var(--black);
   text-transform: capitalize;
 }
 
 .playlist-details .row .column .details p {
+ text-align: left;
   padding: 1rem 0;
   line-height: 2;
   font-size: 1.8rem;
@@ -1353,11 +1372,11 @@ section {
     font-size: 55%;
   }
 }
-
+/* 
 @media (max-width: 768px) {
   #search-btn {
     display: inline-block;
-  }
+  } */
 
   .header .flex .search-form {
     position: absolute;
@@ -1377,7 +1396,8 @@ section {
   .header .flex .search-form.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-}
+
+
 
 @media (max-width: 450px) {
   html {
@@ -1397,3 +1417,13 @@ section {
     height: 25rem;
   }
 }
+
+@media (max-width: 768px) {
+  
+    /* #search-btn {
+      display: inline-block; */
+
+  #humberger-menu {
+    display: inline-block;
+  }
+  }
