@@ -402,7 +402,10 @@ body {
 /*Tablet*/
 @media (max-width: 768px) {
   html {
-    font-size: 60%;
+    font-size: 50%;
+    height: 100%;
+    width: 100%;
+    min-width: 10vh;
   
 
 

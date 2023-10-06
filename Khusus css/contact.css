@@ -170,7 +170,7 @@ footer{
   font-family: "Open Sans";
   padding-top: 40px;
   color: #fff;
-  position: absolute;
+  /* position: absolute; */
 }
 .footer-content{
   display: flex;
