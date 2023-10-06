@@ -14,72 +14,6 @@
 }
 
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem; /* Ubah padding top dan bottom menjadi 1rem */
-  background-color: #FFECAF;
-  border-bottom: 1px solid #fff; /* Ubah warna border menjadi putih */
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-}
-
-.navbar .navbar-logo {
-  font-size: 2rem; /* Ubah ukuran font logo menjadi 2rem */
-  font-weight: 700;
-  color: black;
-  font-style: italic;
-}
-
-.navbar .navbar-logo span {
-  color: #f4800d;
-}
-
-.navbar .navbar-nav a {
-  color: black;
-  display: inline-block;
-  font-size: 1.2rem; /* Ubah ukuran font menu menjadi 1.2rem */
-  margin: 0 1rem;
-  font-weight: 600;
-  text-transform: uppercase; /* Ubah teks menu menjadi huruf kapital */
-}
-
-.navbar .navbar-nav a:hover {
-  color: #ed790d;
-}
-
-.navbar .navbar-nav a::after {
-  content: "";
-  display: block;
-  padding-bottom: 0.2rem; /* Ubah padding bottom menjadi 0.2rem */
-  border-bottom: 0.2rem solid var(--primary);
-  transform: scalex(0);
-}
-
-.navbar .navbar-nav a:hover::after {
-  transform: scalex(1); /* Ubah transform scale menjadi 1 */
-  transition: 0.3s linear;
-}
-
-.navbar .navbar-extra a {
-  color: black;
-  margin: 0 0.5rem;
-}
-
-.navbar .navbar-extra a:hover {
-  color: #a17041;
-}
-
-#humberger-menu {
-  display: none;
-}
-
-
 * {
   font-family: "Nunito", sans-serif;
   margin: 0;
@@ -115,6 +49,7 @@ html::-webkit-scrollbar-thumb {
 
 body {
   background-color: var(--bg);
+  font-family: "poppins", sans-serif;
   
 }
 
@@ -1341,25 +1276,6 @@ section {
   margin: 1rem 0;
 }
 
-.footer {
-  background-color: var(--light-color);
-  border-top: var(--light-color);
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 1rem;
-  padding: 1rem 1rem;
-  color: var(--black);
-  margin-top: 1rem;
-  z-index: 1000;
-  /* padding-bottom: 9.5rem; */
-}
-
-.footer span {
-  color: var(--main-color);
-}
 
 @media (max-width: 1200px) {
   body {
