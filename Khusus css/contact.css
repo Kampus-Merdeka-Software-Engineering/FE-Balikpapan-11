@@ -48,7 +48,7 @@ body {
 }
 
 .left {
-  background: url("/Aset/UNGU.jpg") no-repeat center;
+  background: url("../Aset/UNGU.jpg") no-repeat center;
   background-size: cover;
   height: 100%;
 }
