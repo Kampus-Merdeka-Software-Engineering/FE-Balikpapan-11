@@ -87,6 +87,7 @@ section {
   padding-bottom: 1.5rem;
   text-transform: capitalize;
   min-height: 10vh;
+  padding-top: 2rem;
 }
 
 .inline-btn {
