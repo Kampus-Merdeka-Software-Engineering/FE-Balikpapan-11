@@ -117,29 +117,47 @@ textarea {
   background-color: #fff;
 }
 
-
-@media screen and (max-width: 880px) {
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+  
   .contact-box {
     grid-template-columns: 1fr;
   }
+  
   .left {
     height: 200px;
   }
 }
 
+/* Medium screens */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    padding: 20px 50px;
+  }
   
-@media (max-width: 1366px) {
-   .container{
-    font-size: 70%;
-    width: 100%;
-    margin-bottom: 100px;
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  
+  .left {
+    height: 300px;
   }
 }
 
-/*Tablet*/
-@media (max-width: 768px) {
-  .container:after {
-    font-size: 100%;
-    width: 100%;
+/* Large screens */
+@media only screen and (min-width: 901px) {
+  .container {
+    padding: 20px 100px;
+  }
+  
+  .contact-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .left {
+    height: 100%;
   }
 }
