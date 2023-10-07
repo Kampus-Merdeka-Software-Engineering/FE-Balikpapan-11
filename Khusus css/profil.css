@@ -151,28 +151,121 @@ nav {
     
 }
 
-#instagram,
-#github,
-#facebook,
-#linkedin {
-    font-size: 20px;
-    background-color: #FFECAF;
-    color: black;
-    /* box-shadow: 2px 2px 2px rgba(107, 83, 170, 1)k, 
-    10px 1px 12px rgba(107, 83, 170, 1), 2px 2px 10px black,
-    2px 2px 3px rgba(107, 83, 170, 1);  */
-    border-radius: 29px;
-    padding: 11px 19px;
-    margin: 0 40px;
+@media screen and (max-width: 768px) {
+    nav {
+      padding: 0px 16px;
+    }
     
+    .hero-section {
+      padding: 0px 16px;
+    }
     
-}
-
-
-/* footer */
-.footer {
-    display: flex;
-    justify-content: center;
-    background-color: #FFCD4B;
-    color: black;
-}
+    .hero-information {
+      text-align: center;
+    }
+    
+    .hero-image {
+      width: 100%;
+      height: auto;
+    }
+    
+    .section-tengah {
+      height: auto;
+    }
+    
+    .nama, .email, .pesan, .btn {
+      width: 100%;
+    }
+  }
+  
+  
+  @media screen and (min-width: 769px) {
+    nav {
+      padding: 0px 120px;
+    }
+    
+    .hero-section {
+      padding: 0px 120px;
+    }
+    
+    .hero-information {
+      text-align: left;
+    }
+    
+    .hero-image {
+      width: 361px;
+      height: 345px;
+    }
+    
+    .section-tengah {
+      height: 500px;
+    }
+    
+    .nama, .email {
+      width: 25%;
+    }
+    
+    .pesan {
+      width: 50%;
+    }
+    
+    .btn {
+      width: 50%;
+    }
+  }
+  
+ 
+  @media screen and (max-width: 480px) {
+    nav {
+      height: 60px;
+    }
+    
+    .logo {
+      font-size: 20px;
+    }
+    
+    .menu {
+      font-size: 16px;
+    }
+    
+    .hero-section {
+      height: auto;
+      flex-direction: column;
+      padding: 32px 16px;
+    }
+    
+    .hero-information h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    
+    .hero-information p {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    
+    .hero-information a {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+    
+    .hero-image {
+      width: 100%;
+      height: auto;
+      margin-top: 32px;
+    }
+    
+    .section-tengah {
+      height: auto;
+      padding: 32px 16px;
+    }
+    
+    .nama, .email, .pesan, .btn {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    
+    .pesan {
+      padding: 16px;
+    }
+  }
