@@ -88,13 +88,53 @@ wrapper.addEventListener("mouseleave", autoPlay);
 
 
 
-//logo slider
+// tampilan menu
+const bgText = document.querySelector('.bg-text');
+const tentang = document.querySelector('.tentang');
+
+bgText.style.willChange = 'transform, opacity';
+
+bgText.animate(
+  [
+    { opacity: 0, transform: 'translateX(-50px)' },
+    { opacity: 1, transform: 'translateX(0)' },
+  ],
+  {
+    duration: 1000,
+    easing: 'ease-in-out',
+    fill: 'forwards',
+  }
+);
 
 
 
+tentang.animate(
+  [
+    { opacity: 0, transform: 'translateY(-50px)' },
+    { opacity: 1, transform: 'translateY(0)' },
+  ],
+  {
+    duration: 1000,
+    easing: 'ease-in-out',
+    fill: 'forwards',
+  }
+);
 
 
 
+const boxes = document.querySelectorAll('.box');
 
-
+boxes.forEach((box) => {
+  box.animate(
+    [
+      { opacity: 0, transform: 'translateX(50px)' },
+      { opacity: 1, transform: 'translateX(0)' },
+    ],
+    {
+      duration: 1000,
+      easing: 'ease-in-out',
+      fill: 'forwards',
+    }
+  );
+});
 

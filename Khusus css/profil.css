@@ -1,271 +1,278 @@
-
-
-*{
-    font-family: 'Poppins', sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* navigation-bar */
 
 nav {
-    width: 100%;
-    height: 80px;
-    position: sticky;
-    top: 0;
-    background-color:  #FFCD4B;
-    padding: 0px 120px;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  background-color: #FFCD4B;
+  padding: 0px 120px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
 .logo {
-    font-size: 24px;
-    font-weight: 600;
+  font-size: 24px;
+  font-weight: 600;
 }
+
 .wrap-menu {
-    display: flex;
+  display: flex;
 }
 
 .menu {
-    margin: 0px 16px;
-    font-size: 20px;
-    font-weight: 500;
+  margin: 0px 16px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /* end navigation */
- 
+
 
 /* hero section */
 .hero-section {
-    width: 100% ;
-    height: 670px ;
-    padding: 0px 120px;
-    background-color: white;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
+  width: 100%;
+  height: 670px;
+  padding: 0px 120px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
 .hero-information h3 {
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 500;
-    margin-bottom: 16px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
 
 .hero-information h1 {
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 16px;
 }
 
 .hero-information p {
-    font-size: 20px;
-    margin-bottom: 28px;
+  font-size: 20px;
+  margin-bottom: 28px;
 }
 
 .hero-information a {
-    padding: 8px 32px;
-    background-color: white;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 12px;
-    
+  padding: 8px 32px;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+
 }
 
 .hero-image {
-    width: 361px ;
-    height: 345px;
-     
-   
+  width: 361px;
+  height: 345px;
+
+
 }
 
-.hero-image> img {
-    width: 100%;
-    height: 100%;
-   border-radius: 30px;
-    
-    
-} 
+.hero-image>img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+
+
+}
+
 /* end hero section */
 
 /* section-tengah */
 .section-tengah {
-    padding-top: 2%;
-    text-align: center;
-    color: black;
-    background-color: #F6FDC3;
-    height: 500px;
+  padding-top: 2%;
+  text-align: center;
+  color: black;
+  background-color: #F6FDC3;
+  height: 500px;
 }
 
 .input-text {
-    padding-top: 2%;
+  padding-top: 2%;
 }
 
 .nama {
-    width: 25%;
-    text-align: center;
-    border-radius: 8px;
-    border: none;
-    padding: 7px;
+  width: 25%;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  padding: 7px;
 
 }
 
 .email {
-    width: 25%;
-    text-align: center;
-    border-radius: 8px;
-    border: none;
-    padding: 7px;
+  width: 25%;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  padding: 7px;
 
 }
 
 .pesan {
-    width: 50%;
-    text-align: center;
-    border-radius: 8px;
-    border: none;
-    padding: 5%;
+  width: 50%;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  padding: 5%;
 
 }
 
 .btn {
-    width: 50%;
-    border-radius: 8px;
-    border: none;
-    padding: 5px;
+  width: 50%;
+  border-radius: 8px;
+  border: none;
+  padding: 5px;
 
 }
 
 .sosial-media {
-    padding-top: 5%;
-    
+  padding-top: 5%;
+
 }
 
 @media screen and (max-width: 768px) {
-    nav {
-      padding: 0px 16px;
-    }
-    
-    .hero-section {
-      padding: 0px 16px;
-    }
-    
-    .hero-information {
-      text-align: center;
-    }
-    
-    .hero-image {
-      width: 100%;
-      height: auto;
-    }
-    
-    .section-tengah {
-      height: auto;
-    }
-    
-    .nama, .email, .pesan, .btn {
-      width: 100%;
-    }
+  nav {
+    padding: 0px 16px;
   }
-  
-  
-  @media screen and (min-width: 769px) {
-    nav {
-      padding: 0px 120px;
-    }
-    
-    .hero-section {
-      padding: 0px 120px;
-    }
-    
-    .hero-information {
-      text-align: left;
-    }
-    
-    .hero-image {
-      width: 361px;
-      height: 345px;
-    }
-    
-    .section-tengah {
-      height: 500px;
-    }
-    
-    .nama, .email {
-      width: 25%;
-    }
-    
-    .pesan {
-      width: 50%;
-    }
-    
-    .btn {
-      width: 50%;
-    }
+
+  .hero-section {
+    padding: 0px 16px;
   }
-  
- 
-  @media screen and (max-width: 480px) {
-    nav {
-      height: 60px;
-    }
-    
-    .logo {
-      font-size: 20px;
-    }
-    
-    .menu {
-      font-size: 16px;
-    }
-    
-    .hero-section {
-      height: auto;
-      flex-direction: column;
-      padding: 32px 16px;
-    }
-    
-    .hero-information h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
-    }
-    
-    .hero-information p {
-      font-size: 16px;
-      margin-bottom: 16px;
-    }
-    
-    .hero-information a {
-      font-size: 16px;
-      padding: 8px 16px;
-    }
-    
-    .hero-image {
-      width: 100%;
-      height: auto;
-      margin-top: 32px;
-    }
-    
-    .section-tengah {
-      height: auto;
-      padding: 32px 16px;
-    }
-    
-    .nama, .email, .pesan, .btn {
-      width: 100%;
-      margin-bottom: 16px;
-    }
-    
-    .pesan {
-      padding: 16px;
-    }
+
+  .hero-information {
+    text-align: center;
   }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-tengah {
+    height: auto;
+  }
+
+  .nama,
+  .email,
+  .pesan,
+  .btn {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  nav {
+    padding: 0px 120px;
+  }
+
+  .hero-section {
+    padding: 0px 120px;
+  }
+
+  .hero-information {
+    text-align: left;
+  }
+
+  .hero-image {
+    width: 361px;
+    height: 345px;
+  }
+
+  .section-tengah {
+    height: 500px;
+  }
+
+  .nama,
+  .email {
+    width: 25%;
+  }
+
+  .pesan {
+    width: 50%;
+  }
+
+  .btn {
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  nav {
+    height: 60px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .menu {
+    font-size: 16px;
+  }
+
+  .hero-section {
+    height: auto;
+    flex-direction: column;
+    padding: 32px 16px;
+  }
+
+  .hero-information h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .hero-information p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .hero-information a {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+  }
+
+  .section-tengah {
+    height: auto;
+    padding: 32px 16px;
+  }
+
+  .nama,
+  .email,
+  .pesan,
+  .btn {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .pesan {
+    padding: 16px;
+  }
+}

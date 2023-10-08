@@ -15,13 +15,22 @@
 
 
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: "poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
   border: none;
   text-decoration: none;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: #F6FDC3;
+  color: #F6FDC3;
+  min-height: 1100px;
+  text-align: center;
+  justify-content: center;
 }
 
 *::selection {
@@ -50,7 +59,7 @@ html::-webkit-scrollbar-thumb {
 body {
   background-color: var(--bg);
   font-family: "poppins", sans-serif;
-  
+
 }
 
 body.dark {
@@ -72,7 +81,7 @@ section {
 
 }
 
-.heading h1{
+.heading h1 {
   margin: 20px;
   margin-bottom: 2.5rem;
   margin-top: 3rem;
@@ -128,7 +137,7 @@ section {
 .btn,
 .inline-btn {
   background-color: var(--main-color);
-  
+
 }
 
 .option-btn,
@@ -281,6 +290,7 @@ section {
   right: 0;
   z-index: 9999;
 }
+
 .navbar .navbar-logo {
   font-size: 1.5rem;
   font-weight: 700;
@@ -299,9 +309,11 @@ section {
   margin: 0 1rem;
   font-weight: 600;
 }
+
 .navbar .navbar-nav a:hover {
   color: #ed790d;
 }
+
 .navbar .navbar-nav a::after {
   content: "";
   display: block;
@@ -309,17 +321,21 @@ section {
   border-bottom: 0.1rem solid var(--primary);
   transform: scalex(0);
 }
+
 .navbar .navbar-nav a:hover::after {
   transform: scalex(0.5);
   transition: 0.3s linear;
 }
+
 .navbar .navbar-extra a {
   color: black;
   margin: 0 0.5rem;
 }
+
 .navbar .navbar-extra a:hover {
   color: #a17041;
 }
+
 #humberger-menu {
   display: flexbox;
 }
@@ -589,7 +605,7 @@ section {
   background-color: var(--white);
   padding: 2rem;
   padding-top: 10%;
-  
+
 }
 
 .playlist-details .row .column {
@@ -686,7 +702,7 @@ section {
 }
 
 .playlist-details .row .column .details p {
- text-align: left;
+  text-align: left;
   padding: 1rem 0;
   line-height: 2;
   font-size: 1.8rem;
@@ -1289,30 +1305,31 @@ section {
     font-size: 55%;
   }
 }
+
 /* 
 @media (max-width: 768px) {
   #search-btn {
     display: inline-block;
   } */
 
-  .header .flex .search-form {
-    position: absolute;
-    top: 99%;
-    left: 0;
-    right: 0;
-    border-top: var(--border);
-    border-bottom: var(--border);
-    background-color: var(--white);
-    border-radius: 0;
-    width: auto;
-    padding: 2rem;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: 0.2s linear;
-  }
+.header .flex .search-form {
+  position: absolute;
+  top: 99%;
+  left: 0;
+  right: 0;
+  border-top: var(--border);
+  border-bottom: var(--border);
+  background-color: var(--white);
+  border-radius: 0;
+  width: auto;
+  padding: 2rem;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: 0.2s linear;
+}
 
-  .header .flex .search-form.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
+.header .flex .search-form.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
 
 
 
@@ -1336,11 +1353,11 @@ section {
 }
 
 @media (max-width: 768px) {
-  
-    /* #search-btn {
+
+  /* #search-btn {
       display: inline-block; */
 
   #humberger-menu {
     display: inline-block;
   }
-  }
+}
