@@ -30,4 +30,23 @@ sendBtn.addEventListener("click", (event) => {
       console.log(data);
     })
     .catch((error) => console.error(error));
+
 });
+
+/* Animations contactus */
+const fields = document.querySelectorAll('.field');
+
+fields.forEach(field => {
+  field.style.opacity = 0;
+  field.style.transform = 'translateX(-100%)';
+});
+
+let delay = 1;
+fields.forEach(field => {
+  setTimeout(() => {
+    field.style.opacity = 1;
+    field.style.transform = 'translateX(0)';
+  }, delay);
+  delay += 500;
+});
+
