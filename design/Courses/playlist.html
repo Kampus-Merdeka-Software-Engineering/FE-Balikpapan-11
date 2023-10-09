@@ -80,44 +80,7 @@
 
          <h1 class="heading">playlist videos</h1>
 
-         <div class="box-container">
-
-            <a class="box" href="watch-video.html">
-               <i class="fas fa-play"></i>
-               <img src="../images/post-1-1.png" alt="">
-               <h3>complete HTML tutorial (part 01)</h3>
-            </a>
-
-            <a class="box" href="watch-video.html">
-               <i class="fas fa-play"></i>
-               <img src="../images/post-1-2.png" alt="">
-               <h3>complete HTML tutorial (part 02)</h3>
-            </a>
-
-            <a class="box" href="watch-video.html">
-               <i class="fas fa-play"></i>
-               <img src="../images/post-1-3.png" alt="">
-               <h3>complete HTML tutorial (part 03)</h3>
-            </a>
-
-            <a class="box" href="watch-video.html">
-               <i class="fas fa-play"></i>
-               <img src="../images/post-1-4.png" alt="">
-               <h3>complete HTML tutorial (part 04)</h3>
-            </a>
-
-            <a class="box" href="watch-video.html">
-               <i class="fas fa-play"></i>
-               <img src="../images/post-1-5.png" alt="">
-               <h3>complete HTML tutorial (part 05)</h3>
-            </a>
-
-            <a class="box" href="watch-video.html">
-               <i class="fas fa-play"></i>
-               <img src="../images/post-1-6.png" alt="">
-               <h3>complete HTML tutorial (part 06)</h3>
-            </a>
-
+         <div class="box-container" id="wrap-playlist"></div>
          </div>
 
       </section>
@@ -125,14 +88,18 @@
       <div id="modal" class="modal">
          <div class="modal-content">
             <span id="close-modal" class="close">&times;</span>
-            <form action="#" class="form">
+            <form action="#" class="form" id="playlist-form">
                <label for="nama">Title:</label>
                <input type="text" id="nama" name="nama" required class="input">
-               <label for="email">Link:</label>
-               <input type="email" id="email" name="email" required class="input">
-               <button type="submit" class="btn-add" value="Kirim">Add Playlist</button>
+               <label for="gambar">Gambar (Link):</label>
+               <input type="url" id="gambar" name="gambar" required class="input">
+               <label for="video">Video (Link):</label>
+               <input type="url" id="video" name="video" required class="input">
+               <button type="submit" class="btn-add">Add Playlist</button>
             </form>
          </div>
+      </div>
+      </div>
       </div>
       <script src="../../js/tambah.js"></script>
 
@@ -155,6 +122,28 @@
       <script src="../../js/design.js"></script>
       <script>
          feather.replace();
+      </script>
+
+      <script>
+         fetch('https://be-balikpapan-11-production-223d.up.railway.app/courses')
+            .then(response => response.json())
+            .then((courses) => {
+               const wrapPlaylist = document.querySelector("#wrap-playlist");
+               let listCourses = ""
+
+               courses.forEach((courses) => {
+                  listCourses += `
+               <a class="box" href="${courses.video}" target="_blank">
+               <i class="fas fa-play"></i>
+               <img src="${courses.gambar}" target="_blank">
+               <h3>${courses.name}</h3>
+               </a>
+               `
+               })
+
+               wrapPlaylist.innerHTML = listCourses;
+            });
+
       </script>
 
 
