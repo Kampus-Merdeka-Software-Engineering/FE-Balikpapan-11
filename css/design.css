@@ -24,14 +24,7 @@
   text-decoration: none;
 }
 
-body {
-  font-family: "poppins", sans-serif;
-  background-color: #F6FDC3;
-  color: #F6FDC3;
-  min-height: 1100px;
-  text-align: center;
-  justify-content: center;
-}
+
 
 *::selection {
   background-color: var(--main-color);
@@ -57,6 +50,12 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
+  font-family: "poppins", sans-serif;
+  background-color: #F6FDC3;
+  color: #F6FDC3;
+  min-height: 1100px;
+  text-align: center;
+  justify-content: center;
   background-color: var(--bg);
   font-family: "poppins", sans-serif;
 
@@ -277,64 +276,7 @@ section {
   display: none;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 5%;
-  background-color: #FFECAF;
-  border-bottom: 1px solid #ffff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-}
 
-.navbar .navbar-logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: black;
-  font-style: italic;
-}
-
-.navbar .navbar-logo span {
-  color: #f4800d;
-}
-
-.navbar .navbar-nav a {
-  color: black;
-  display: inline-block;
-  font-size: 1.1rem;
-  margin: 0 1rem;
-  font-weight: 600;
-}
-
-.navbar .navbar-nav a:hover {
-  color: #ed790d;
-}
-
-.navbar .navbar-nav a::after {
-  content: "";
-  display: block;
-  padding-bottom: 0.5rem;
-  border-bottom: 0.1rem solid var(--primary);
-  transform: scalex(0);
-}
-
-.navbar .navbar-nav a:hover::after {
-  transform: scalex(0.5);
-  transition: 0.3s linear;
-}
-
-.navbar .navbar-extra a {
-  color: black;
-  margin: 0 0.5rem;
-}
-
-.navbar .navbar-extra a:hover {
-  color: #a17041;
-}
 
 #humberger-menu {
   display: flexbox;

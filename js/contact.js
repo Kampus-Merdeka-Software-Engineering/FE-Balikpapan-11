@@ -1,5 +1,5 @@
 const from = document.getElementById("from");
-const input = document.getElementById("input");
+const input = document.getElementById("input_name");
 const email = document.getElementById("email");
 const number = document.getElementById("number");
 const send = document.getElementById("send");
